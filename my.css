@@ -1,0 +1,308 @@
+html,
+body {
+	height: 100%;
+}
+
+.graph {
+	height: 400px;
+	width: 100%;
+}
+
+.card-img-caption {
+	border-top-left-radius: calc(.25rem - 1px);
+	border-top-right-radius: calc(.25rem - 1px);
+}
+
+/* .card-bgimage{
+    background-image: url(/images/wind.png);
+    background-size: 11vh;
+} */
+.card-img-caption .card-img-top {
+	z-index: 0;
+}
+
+.card-img-caption .card-text {
+	text-align: center;
+	width: 100%;
+	margin: 33% 0;
+	position: absolute;
+	z-index: 1;
+}
+
+/* .card-img-caption .card-title{
+    text-align: center;
+    width: 100%;
+    margin: 33% 0;
+    position: absolute;
+    z-index: 1;
+} */
+
+.togler-red {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+#menu {
+	width: 20%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	z-index: 1000;
+	color: white;
+	font-weight: bold;
+}
+
+#menu .mybtn {
+	margin-top: 2px;
+}
+
+/* .console{
+    background-color: black;
+    color: chartreuse;
+    font-family: monospace;
+} */
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 1s
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active in <2.1.8 */
+
+	{
+	opacity: 0
+}
+
+.slide-fade-enter-active {
+	transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+	transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to
+
+/* .slide-fade-leave-active below version 2.1.8 */
+	{
+	transform: translateY(-10px);
+	opacity: 0;
+}
+
+@media (max-width: 576px) {
+	#menu {
+		width: 100%;
+	}
+}
+
+
+.cssload-thecube {
+	width: 73px;
+	height: 73px;
+	margin: 0 auto;
+	margin-top: 49px;
+	position: relative;
+	transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+}
+
+.cssload-thecube .cssload-cube {
+	position: relative;
+	transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+}
+
+.cssload-thecube .cssload-cube {
+	float: left;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+}
+
+.cssload-thecube .cssload-cube:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(43, 160, 199);
+	animation: cssload-fold-thecube 2.76s infinite linear both;
+	-o-animation: cssload-fold-thecube 2.76s infinite linear both;
+	-ms-animation: cssload-fold-thecube 2.76s infinite linear both;
+	-webkit-animation: cssload-fold-thecube 2.76s infinite linear both;
+	-moz-animation: cssload-fold-thecube 2.76s infinite linear both;
+	transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+}
+
+.cssload-thecube .cssload-c2 {
+	transform: scale(1.1) rotateZ(90deg);
+	-o-transform: scale(1.1) rotateZ(90deg);
+	-ms-transform: scale(1.1) rotateZ(90deg);
+	-webkit-transform: scale(1.1) rotateZ(90deg);
+	-moz-transform: scale(1.1) rotateZ(90deg);
+}
+
+.cssload-thecube .cssload-c3 {
+	transform: scale(1.1) rotateZ(180deg);
+	-o-transform: scale(1.1) rotateZ(180deg);
+	-ms-transform: scale(1.1) rotateZ(180deg);
+	-webkit-transform: scale(1.1) rotateZ(180deg);
+	-moz-transform: scale(1.1) rotateZ(180deg);
+}
+
+.cssload-thecube .cssload-c4 {
+	transform: scale(1.1) rotateZ(270deg);
+	-o-transform: scale(1.1) rotateZ(270deg);
+	-ms-transform: scale(1.1) rotateZ(270deg);
+	-webkit-transform: scale(1.1) rotateZ(270deg);
+	-moz-transform: scale(1.1) rotateZ(270deg);
+}
+
+.cssload-thecube .cssload-c2:before {
+	animation-delay: 0.35s;
+	-o-animation-delay: 0.35s;
+	-ms-animation-delay: 0.35s;
+	-webkit-animation-delay: 0.35s;
+	-moz-animation-delay: 0.35s;
+}
+
+.cssload-thecube .cssload-c3:before {
+	animation-delay: 0.69s;
+	-o-animation-delay: 0.69s;
+	-ms-animation-delay: 0.69s;
+	-webkit-animation-delay: 0.69s;
+	-moz-animation-delay: 0.69s;
+}
+
+.cssload-thecube .cssload-c4:before {
+	animation-delay: 1.04s;
+	-o-animation-delay: 1.04s;
+	-ms-animation-delay: 1.04s;
+	-webkit-animation-delay: 1.04s;
+	-moz-animation-delay: 1.04s;
+}
+
+
+
+@keyframes cssload-fold-thecube {
+
+	0%,
+	10% {
+		transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+
+	90%,
+	100% {
+		transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-fold-thecube {
+
+	0%,
+	10% {
+		-o-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		-o-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+
+	90%,
+	100% {
+		-o-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-fold-thecube {
+
+	0%,
+	10% {
+		-ms-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		-ms-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+
+	90%,
+	100% {
+		-ms-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+
+	0%,
+	10% {
+		-webkit-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		-webkit-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+
+	90%,
+	100% {
+		-webkit-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-fold-thecube {
+
+	0%,
+	10% {
+		-moz-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		-moz-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+
+	90%,
+	100% {
+		-moz-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
